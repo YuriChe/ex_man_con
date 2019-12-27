@@ -1,4 +1,5 @@
 from homeEx_man_cont import Loger
+import time
 best_avr, best_grade = 0, None
 
 if __name__ == '__main__':
@@ -6,6 +7,7 @@ if __name__ == '__main__':
     # with open('hello.txt') as f:
         while True:
             grade = f.readline().strip()
+            time.sleep(3)
             if not grade:
                 break
             rating = f.readline().strip()

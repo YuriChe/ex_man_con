@@ -25,7 +25,7 @@ class Loger:
         self.file.write(info)
 
     def readline(self):
-        self.file.readline()
+        return self.file.readline()
 
 if __name__ == '__main__':
     with Loger('testTime1.txt') as log:
